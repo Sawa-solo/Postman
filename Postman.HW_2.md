@@ -7,6 +7,11 @@
 
 Метод: GET 
 
+```JS
+Response:
+
+This is the first responce from server!ss
+```
 1. Проверить, что статус код 200 
 ```JS
 pm.test("Status code is 200", function () {
@@ -28,7 +33,32 @@ pm.test("Body matches string", function () {
 
 Метод: POST
 
+Параметры:
+
 ![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/key-value%20user_info_3.png)
+
+```JS
+Response:
+
+{
+    "age": "29",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "u_salary_1_5_year": 1000
+    },
+    "name": "Sasha",
+    "salary": 250
+}
+```
 
 1. Проверить, что статус код 200
 ```JS
@@ -116,6 +146,8 @@ pm.test("Salary_1_5_year", function () {
  pm.expect(req_salary*4).to.eql(resp_salary_1_5_year);
 });
 ```
+Результаты тестов:
+
 ![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/tests%20pass%20user_info_3.png)
 
 
@@ -124,6 +156,41 @@ pm.test("Salary_1_5_year", function () {
 Отправить запрос на URL: http://162.55.220.72:5005/object_info_3
 
 Метод: GET
+
+Параметры: см. Задание № 2
+
+```JS
+Response:
+
+{
+    "age": "29",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "pets": {
+            "cat": {
+                "age": 3,
+                "name": "Sunny"
+            },
+            "dog": {
+                "age": 4,
+                "name": "Luky"
+            }
+        },
+        "u_salary_1_5_year": 2000
+    },
+    "name": "Sasha",
+    "salary": 500
+}
+```
 
 1. Проверить, что статус код 200
 ```JS
