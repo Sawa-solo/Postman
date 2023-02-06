@@ -425,7 +425,7 @@ pm.test("Salary 3", function () {
 2. Вставить параметр age из окружения в age
 3. Вставить параметр name из окружения в name
 
-![]()
+![](https://github.com/Sawa-solo/Postman/blob/f021bd63eaacbd0d8cbf8d229585bacfd6a080c6/screens/params%20user_info_2.png)
 
 4. Отправить запрос на URL методом POST: http://162.55.220.72:5005/user_info_2
 
