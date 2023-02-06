@@ -251,7 +251,7 @@ pm.expect(+ req_p.salary).to.eql(resp_p.salary);
 ```JS
 console. log (resp_p.family)
 ```
-![]()
+![](https://github.com/Sawa-solo/Postman/blob/01649577689120888db8f44d66f6b75b4bb677b5/screens/console_object_info_3.png)
 
 9. Проверить, что у параметра dog есть параметр name
 
@@ -281,7 +281,9 @@ pm.test("Dog is 4 year", function () {
  pm.expect(dog_age).to.eql(4);
 });
 ```
+Результаты тестов:
 
+![]()
 > ## Задание № 4
 
 Отправить запрос на URL: http://162.55.220.72:5005/object_info_4 
