@@ -287,11 +287,15 @@ pm.test("Dog is 4 year", function () {
 Результаты тестов:
 
 ![](https://github.com/Sawa-solo/Postman/blob/49d8fea2848ac1665a0673d449efcb24bd2e4526/screens/tests%20results%20object_info_3.png)
+
+
 > ## Задание № 4
 
 Отправить запрос на URL: http://162.55.220.72:5005/object_info_4 
 
 Метод: GET
+
+Параметры: см. Задание № 2
 
 1. Проверить, что статус код 200
 
