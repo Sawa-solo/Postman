@@ -417,7 +417,7 @@ pm.test("Salary 3", function () {
 
 Результаты тестов:
 
-![]()
+![](https://github.com/Sawa-solo/Postman/blob/3a99620f199c7bf21707ce3647138c1b80957b0a/screens/tests%20results%20object_info_4.png)
 
 
 > ## Задание № 5
