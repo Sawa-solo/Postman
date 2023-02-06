@@ -56,21 +56,21 @@ let resp_salary = +resp_f.salary
 let resp_salary_1_5_year = resp_f.family.u_salary_1_5_year
 ```
 
-4. Проверить, что name в ответе равно name в request (name вбить руками.)
+4. Проверить, что name в ответе равно name в request (name вбить руками)
 ```JS
 pm.test("Name", function () {
 pm.expect(req_name).to.eql("Sasha");
 });
 ```
 
-5. Проверить, что age в ответе равно age в request (age вбить руками.)
+5. Проверить, что age в ответе равно age в request (age вбить руками)
 ```JS
 pm.test("Age", function () {
 pm.expect(req_age).to.eql(29);
 });
 ```
 
-6. Проверить, что salary в ответе равно salary в request (salary вбить руками.)
+6. Проверить, что salary в ответе равно salary в request (salary вбить руками)
 ```JS
 pm.test("Salary", function () {
 pm.expect(req_salary).to.eql(250);
@@ -82,28 +82,28 @@ pm.expect(req_salary).to.eql(250);
 let req_f = request.data
 ```
 
-8. Проверить, что name в ответе равно name в request (name забрать из request.)
+8. Проверить, что name в ответе равно name в request (name забрать из request)
 ```JS
 pm.test("Name", function () {
 pm.expect(req_name).to.eql(resp_name);
 });
 ```
 
-9. Проверить, что age в ответе равно age в request (age забрать из request.)
+9. Проверить, что age в ответе равно age в request (age забрать из request)
 ```JS
 pm.test("Age", function () {
 pm.expect(req_age).to.eql(resp_age);
 });
 ```
 
-10. Проверить, что salary в ответе равно salary в request (salary забрать из request.)
+10. Проверить, что salary в ответе равно salary в request (salary забрать из request)
 ```JS
 pm.test("Salary", function () {
 pm.expect(req_salary).to.eql(resp_salary);
 });
 ```
 
-11. Вывести в консоль параметр family из response.
+11. Вывести в консоль параметр family из response
 ```JS
 console.log (resp_f.family)
 ```
