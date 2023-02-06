@@ -397,7 +397,7 @@ pm.test("Salary 3", function () {
 16. Создать в окружении переменную age
 17. Создать в окружении переменную salary
 
-![]()
+![](https://github.com/Sawa-solo/Postman/blob/c0f73464e1a32d7f20d807f6ff397fc342b1fcee/screens/environments.png)
 
 18. Передать в окружение переменную name
 
