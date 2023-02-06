@@ -23,6 +23,9 @@ pm.test("Status code is 200", function () {
 pm.test("Body matches string", function () {
     pm.expect(pm.response.text()).to.include("This is the first responce from server!ss");
 ```
+
+Результаты тестов:
+
 ![](https://github.com/Sawa-solo/Postman/blob/4b548d122fd3bf771637d8c30caf399b2d7a98e7/screens/first.png)
 
 
