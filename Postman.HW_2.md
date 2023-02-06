@@ -369,7 +369,7 @@ console.log(resp_p.salary [1])
 console.log(resp_p.salary [2])
 ```
 
-![]()
+![](https://github.com/Sawa-solo/Postman/blob/854506f4a3e93d6d3f3beea152c4f185b01f8c58/screens/console%20object_info_4.png)
 
 12. Проверить, что 0-й элемент параметра salary равен salary из request (salary забрать из request)
 
@@ -414,6 +414,8 @@ pm.test("Salary 3", function () {
 ```JS
  pm.environment.set("salary", 700)
 ```
+
+Результаты тестов:
 
 ![]()
 
