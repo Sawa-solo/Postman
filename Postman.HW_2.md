@@ -297,6 +297,20 @@ pm.test("Dog is 4 year", function () {
 
 Параметры: см. Задание № 2
 
+```JS
+Response:
+
+{
+    "age": 30,
+    "name": "Masha",
+    "salary": [
+        700,
+        "1400",
+        "2100"
+    ]
+}
+```
+
 1. Проверить, что статус код 200
 
 ```JS
@@ -429,6 +443,27 @@ pm.test("Salary 3", function () {
 
 4. Отправить запрос на URL методом POST: http://162.55.220.72:5005/user_info_2
 
+```JS
+Response:
+
+{
+    "person": {
+        "u_age": 30,
+        "u_name": [
+            "Masha",
+            700,
+            30
+        ],
+        "u_salary_5_years": 2940.0
+    },
+    "qa_salary_after_1.5_year": 2310.0,
+    "qa_salary_after_12_months": 1890.0000000000002,
+    "qa_salary_after_3.5_years": 2660.0,
+    "qa_salary_after_6_months": 1400,
+    "start_qa_salary": 700
+}
+```
+
 5. Проверить, что статус код 200
 ```JS
 pm.test("Status code is 200", function () {
@@ -540,5 +575,5 @@ pm.test("Check u_salary_5_years", function () {
     pm.expect(req_salary *4.2).to.eql(resp_u_salary_5_years);
 });
 ```
-
+Результаты тестов: 
 ![](https://github.com/Sawa-solo/Postman/blob/2a60ffffe3ec895684f85afb3f5e3ad2f5874722/screens/tests%20results%20user_info_2.png)
