@@ -25,7 +25,7 @@ pm.test("Body matches string", function () {
 Отправить запрос на URL: http://162.55.220.72:5005/user_info_3
 
 Метод:POST
-![](.jpg)
+![](https://github.com/Sawa-solo/Postman/blob/c06931cfae4083c35e594217e379921fdd7b8113/key-value%20user_info_3.png)
 1. Статус код 200
 ```JS
 pm.test("Status code is 200", function () {
