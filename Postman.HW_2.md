@@ -541,4 +541,4 @@ pm.test("Check u_salary_5_years", function () {
 });
 ```
 
-![]()
+![](https://github.com/Sawa-solo/Postman/blob/2a60ffffe3ec895684f85afb3f5e3ad2f5874722/screens/tests%20results%20user_info_2.png)
