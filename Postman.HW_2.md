@@ -1,13 +1,13 @@
 # Homework 2
 
 
-> Задание № 1
+> ## Задание № 1
 
 Отправить запрос на URL: http://162.55.220.72:5005/first
 
 Метод:GET 
 
-1. Статус код 200 
+1. Проверить, что статус код 200 
 ```JS
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -18,14 +18,14 @@ pm.test("Status code is 200", function () {
 pm.test("Body matches string", function () {
     pm.expect(pm.response.text()).to.include("This is the first responce from server!ss");
 ```
+![]()
 
-
-> Задание № 2
+> ## Задание № 2
 
 Отправить запрос на URL: http://162.55.220.72:5005/user_info_3
 
 Метод:POST
-![](https://github.com/Sawa-solo/Postman/blob/c06931cfae4083c35e594217e379921fdd7b8113/key-value%20user_info_3.png)
+![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/key-value%20user_info_3.png)
 1. Статус код 200
 ```JS
 pm.test("Status code is 200", function () {
@@ -36,6 +36,20 @@ pm.test("Status code is 200", function () {
 
 ```JS
 let resp_f = pm.response.json();
+```
+Так же создадим переменные для наших данных
+
+```JS
+let req_age = +req_f.age
+let resp_age = +resp_f.age
+
+let req_name = req_f.name
+let resp_name = resp_f.name 
+
+let req_salary = +req_f.salary
+let resp_salary = +resp_f.salary
+
+let resp_salary_1_5_year = resp_f.family.u_salary_1_5_year
 ```
 
 3. Проверить, что name в ответе равно name в request (name вбить руками.)
@@ -90,13 +104,15 @@ pm.expect(req_salary).to.eql(resp_salary);
 console.log (resp_f.family)
 ```
 
+![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/console%20user_info_3.png)
+
 11. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
 ```JS
 pm.test("Salary_1_5_year", function () {
  pm.expect(req_salary*4).to.eql(resp_salary_1_5_year);
 });
 ```
-
+![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/tests%20pass%20user_info_3.png)
 
 
 
