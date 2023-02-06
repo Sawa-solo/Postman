@@ -5,7 +5,7 @@
 
 Отправить запрос на URL: http://162.55.220.72:5005/first
 
-Метод:GET 
+Метод: GET 
 
 1. Проверить, что статус код 200 
 ```JS
@@ -20,24 +20,28 @@ pm.test("Body matches string", function () {
 ```
 ![](https://github.com/Sawa-solo/Postman/blob/4b548d122fd3bf771637d8c30caf399b2d7a98e7/screens/first.png)
 
+
+
 > ## Задание № 2
 
 Отправить запрос на URL: http://162.55.220.72:5005/user_info_3
 
-Метод:POST
+Метод: POST
+
 ![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/key-value%20user_info_3.png)
-1. Статус код 200
+
+1. Проверить, что статус код 200
 ```JS
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
-2. Спарсить response body в json. 
+2. Спарсить response body в json 
 
 ```JS
 let resp_f = pm.response.json();
 ```
-Так же создадим переменные для наших данных
+3. Создать переменные для данных
 
 ```JS
 let req_age = +req_f.age
@@ -52,61 +56,61 @@ let resp_salary = +resp_f.salary
 let resp_salary_1_5_year = resp_f.family.u_salary_1_5_year
 ```
 
-3. Проверить, что name в ответе равно name в request (name вбить руками.)
+4. Проверить, что name в ответе равно name в request (name вбить руками.)
 ```JS
 pm.test("Name", function () {
 pm.expect(req_name).to.eql("Sasha");
 });
 ```
 
-4. Проверить, что age в ответе равно age в request (age вбить руками.)
+5. Проверить, что age в ответе равно age в request (age вбить руками.)
 ```JS
 pm.test("Age", function () {
 pm.expect(req_age).to.eql(29);
 });
 ```
 
-5. Проверить, что salary в ответе равно salary в request (salary вбить руками.)
+6. Проверить, что salary в ответе равно salary в request (salary вбить руками.)
 ```JS
 pm.test("Salary", function () {
 pm.expect(req_salary).to.eql(250);
 });
 ```
 
-6. Спарсить request.
+7. Спарсить request
 ```JS
 let req_f = request.data
 ```
 
-7. Проверить, что name в ответе равно name в request (name забрать из request.)
+8. Проверить, что name в ответе равно name в request (name забрать из request.)
 ```JS
 pm.test("Name", function () {
 pm.expect(req_name).to.eql(resp_name);
 });
 ```
 
-8. Проверить, что age в ответе равно age в request (age забрать из request.)
+9. Проверить, что age в ответе равно age в request (age забрать из request.)
 ```JS
 pm.test("Age", function () {
 pm.expect(req_age).to.eql(resp_age);
 });
 ```
 
-9. Проверить, что salary в ответе равно salary в request (salary забрать из request.)
+10. Проверить, что salary в ответе равно salary в request (salary забрать из request.)
 ```JS
 pm.test("Salary", function () {
 pm.expect(req_salary).to.eql(resp_salary);
 });
 ```
 
-10. Вывести в консоль параметр family из response.
+11. Вывести в консоль параметр family из response.
 ```JS
 console.log (resp_f.family)
 ```
 
 ![](https://github.com/Sawa-solo/Postman/blob/0f58df8bf927d8f25d72a65487ef986d891bd15e/screens/console%20user_info_3.png)
 
-11. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
+12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
 ```JS
 pm.test("Salary_1_5_year", function () {
  pm.expect(req_salary*4).to.eql(resp_salary_1_5_year);
