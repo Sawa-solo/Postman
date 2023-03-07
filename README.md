@@ -5,3 +5,9 @@
 
 
 Коллекция **dummyapi.io** из 15 запросов и тестов польностью автоматизирована за счет использования рандомных переменных, которые стандартно предлагаются в  Postman.
+
+### Другие мои репозитории
+* [SQL](https://github.com/Sawa-solo/SQL.git)
+* [Terminal](https://github.com/Sawa-solo/Terminal.git)
+* [XML](https://github.com/Sawa-solo/XML.git)
+* [JSON](https://github.com/Sawa-solo/JSON.git)
