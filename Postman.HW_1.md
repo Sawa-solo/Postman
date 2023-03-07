@@ -26,6 +26,7 @@ response:
     “Str”
 ]
 ```
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_1.jpg)
 ==================
 
 EP_2
@@ -50,6 +51,8 @@ response:
                      'u_salary_1_5_year': salary * 4}}
 
 ```
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_2.png)
 ==================
 
 EP_3
@@ -71,6 +74,8 @@ response:
           'daily_sleep': weight * 2.5}
 
 ```
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_3.jpg)
 ==================
 
 EP_4
@@ -98,6 +103,8 @@ response:
           }
 
 ```
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_4.jpg)
 ==================
 
 EP_5
@@ -126,6 +133,10 @@ response:
           }
 
 ```
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_5.1.jpg)
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_5.2.jpg)
 ==================
 
 EP_6
@@ -147,6 +158,8 @@ response:
           'salary': [salary, str(salary * 2), str(salary * 3)]}
 
 ```
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/EP_6.jpg)
 ==================
 
 EP_7
@@ -172,3 +185,5 @@ response:
                      'u_age': age,
                      'u_salary_5_years': salary * 4.2}
 ```
+
+![](https://github.com/Sawa-solo/Postman/blob/079f4ffe4d26d033434a38b8435ef5d2c427f67b/screens/ER_7.jpg)
